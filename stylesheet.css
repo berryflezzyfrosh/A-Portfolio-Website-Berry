@@ -27,7 +27,7 @@ body
 .logo {
     position: relative;
     font-size: 25px;
-    color: #012290f7;
+    color: blue;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -38,7 +38,7 @@ body
 .navbar a {
     display: inline-block;
     font-size: 25px;
-    color: #012290f7;
+    color: whitesmoke;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -51,7 +51,7 @@ body
     content: '';
     height: 5px;
     width: 0;
-    background: #0053b8f7;
+    background: blue;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -63,7 +63,7 @@ body
  }
 
 .navbar a:hover {
-    color: #0053b8f7;
+    color: blue;
 }
 .home {
     position: relative;
@@ -98,7 +98,7 @@ body
 
 }
 .home-content h3 span{
-    color: #012290f7;
+    color: blue;
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 30px;
@@ -132,10 +132,10 @@ body
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #012290f7;
+    width: 55px;
+    height: 55px;
+    background: #000a1d;
+    border: 3px solid rgb(5, 5, 172);
     border-radius: 50%;
     font-size: 20px;
     color: #012290f7;
@@ -151,9 +151,9 @@ body
 }
 
 .home-sci a:hover {
-    background: #012290f7;
+    background: blue;
     color: #081b29;
-    box-shadow: 0 0 20px  #012290f7;
+    box-shadow: 0 0 20px  blue;
 }
 
 
@@ -162,24 +162,24 @@ body
 .btn-box {
     display: inline-block;
     padding: 12px 28px;
-    background: #012290f7;
+    background: blue;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 18px;
     color: #051129;
     letter-spacing: 1px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 1000;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #012290f7,
-        0 0 25px #012290f7;
+    box-shadow: 0 0 5px blue,
+        0 0 25px blue;
 }
 
 .btn-box:hover {
-        box-shadow: 0 0 5px #012290f7,
-        0 0 25px #012290f7, 0 0 50px #012290f7,
-        0 0 100px #012290f7, 0 0 200px #012290f7;
+        box-shadow: 0 0 5px blue,
+        0 0 25px blue, 0 0 50px blue,
+        0 0 100px blue, 0 0 200px blue;
 }
 
 .about {
@@ -191,18 +191,20 @@ body
 
 .about-img img {
     max-width: 630px;
-    height: auto;
-    width: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+    background: #000a1d;
+    border: 12px solid blue;
     border-radius: 50%;
-    border-style: dotted;
-    border-width: 10px;
-    border-right-color: #012290f7;
-    margin-left: 80px;
-    border-left-color: #0053b8f7;
-    border-top-color: #012290f7;
-    border-bottom-color: #0053b8f7;
-    box-shadow: 0 0 25px #012290f7, 0 0 25px #012290f7, 0 0 25px #012290f7, 0 0 25px #0053b8f7, 0 0 25px #0053b8f7,0 0 50px #0053b8f7;
-    animation: FadeOut 20s ease forwards;
+    border-style: double;
+    font-size: 20px;
+    box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;
+    color: blue;
+    animation: FadeOut 15s ease forwards;
 }
 
 .about-text h2 {
@@ -212,7 +214,7 @@ body
 }
 
 .about-text h2 span {
-    color: #012290f7;
+    color: blue;
 }
 
 .about-text h4 {
@@ -246,7 +248,7 @@ body
     padding-bottom: 70px;
 }
 .sub-title span{
-    color: #012290f7;
+    color: blue;
 }
 
 .container {
@@ -268,11 +270,17 @@ body
     border-right: 10px;
     border-radius: 30px;
     transition: background 0.5s, transform 0.5s;
-    box-shadow: 1px 1px 20px #012290f7,
-              1px 1px 40px #0053b8f7;
+    box-shadow: 1px 1px 20px blue,
+              1px 1px 40px rgb(13, 13, 242);
 }
 .services-list div i {
     font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list img{
+    font-size: 50px;
+    width: 40px;
+    height: 5vh;
     margin-bottom: 30px;
 }
 .services-list div h2 {
@@ -290,9 +298,9 @@ body
 .read {
     display: inline-block;
     padding: 12px 28px;
-    background: #012290f7;
+    background: blue;
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 18px;
     color: #081b29;
     letter-spacing: 1px;
     text-decoration: none;
@@ -300,13 +308,13 @@ body
     opacity: 0;
     animation: slideTop 1s ease forwards ;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #012290f7,
-    0 0 25px #012290f7;
+    box-shadow: 0 0 5px blue,
+    0 0 25px blue;
 }
 .read:hover {
-    box-shadow: 0 0 5px #012290f7,
-        0 0 25px #012290f7, 0 0 50px #012290f7,
-        0 0 100px #012290f7, 0 0 200px #012290f7;
+    box-shadow: 0 0 5px blue,
+        0 0 25px blue, 0 0 50px blue,
+        0 0 100px blue, 0 0 200px blue;
 }
 .services-list div:hover{
     transform: translateY(-10px);
@@ -375,7 +383,7 @@ section{
 } 
 .Technical-bars .bar .progress-line span{
     height: 100%;
-    background-color: #012290f7;
+    background-color: blue;
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
@@ -489,7 +497,7 @@ section{
 }
 .path {
     stroke-width: 10;
-    stroke: #012290f7;
+    stroke: blue;
     fill:  #081b29;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
@@ -555,7 +563,7 @@ section{
     padding-bottom: 20px;
 }
 .main-text h2 span {
-    color: #012290f7;
+    color: blue;
 }
 .portfolio-content{
     display: grid;
@@ -569,12 +577,12 @@ section{
 .row{
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
 }
 .row img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 20px;
     display: block;
     transition: transform 0.5s;
 }
@@ -583,7 +591,7 @@ section{
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.1),#0053b8f7);
     position: absolute;
-    border-radius: 8px;
+    border-radius: 20px;
     left: 0;
     bottom: 0;
     overflow: hidden;
@@ -644,7 +652,7 @@ section{
     text-align: center;
 }
 .contact-text h2 span{
-    color: #012290f7;
+    color: blue;
 }
 .contact-text h4{
     margin: 15px 0;
@@ -662,7 +670,7 @@ section{
 }
 .contact-list {
     margin-bottom: 3rem;
-    color: #012290f7;
+    color: blue;
     margin-left: 20px;
 }
 .contact-list li{
@@ -715,7 +723,7 @@ section{
     width: 90%;
     padding: 18px;
     background: #555557;
-    color: #012290f7;
+    color: blue;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -728,24 +736,18 @@ section{
 .contact-form form .send{
     display: inline-block;
     padding: 14px 60px;
-    background: #012290f7;
+    background: blue;
     border-radius: 40px;
-    font-size: 18px;
+    font-size: 20px;
     color: #081b29;
     letter-spacing: 1px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 1000;
     opacity: 0;
     animation: slideTop 1s ease forwards ;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #012290f7,
-    0 0 25px #012290f7;
-}
-.contact-form form .send:hover {
-    background: #0053b8f7;
-    box-shadow: 0 0 5px #0053b8f7,
-    0 0 25px #0053b8f7, 0 0 50px #0053b8f7,
-    0 0 100px #0053b8f7, 0 0 200px #0053b8f7;
+    box-shadow: 0 0 5px blue,
+    0 0 25px blue;
 }
 
 .last-text p{
@@ -756,28 +758,21 @@ section{
     font-weight: 600;
     margin-top: 10px;
 }
-.last-text p a:hover{
-    color: #011f81f7;
-}
-.top{
+.top {
     position: fixed;
-    text-decoration: none;
     bottom: 2.1rem;
     right: 2,1rem;
-    margin-left: 200px;
-    margin-bottom: 15px;
-    font-weight: 600;
-    opacity: 0;
-    animation: slideTop 3s ease forwards;
-    animation-delay: 2s;
 }
-.top {
-    color: #051129;
-    text-decoration: none;
-    background:  #0053b8f7;
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 1.6rem;
+.top i img{
+    color: #000;
+    background:  blue;
+    margin-left: 8px;
+    font-size: 50px;
+    padding: 80%;
+    align-content: center;
+    border-radius: 1.2rem;
+
+
 }
 
 
