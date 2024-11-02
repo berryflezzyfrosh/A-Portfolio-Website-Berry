@@ -70,14 +70,12 @@ body
     width: 100%;
     justify-content: space-between;
     height: 100vh;
-    background:#081b29;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 100px 10px 0;
 }
-
 .home-content {
     max-width: 600px;
     margin-left: 50px;
@@ -85,6 +83,7 @@ body
 .home-content h2{
     font-size: 32px;
     font-weight: 700;
+    color: #f5f5f5;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
@@ -92,6 +91,7 @@ body
 .home-content h3 {
     font-size: 32px;
     font-weight: 700;
+    color: #f5f5f5;
     opacity: 0;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
@@ -115,6 +115,7 @@ body
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
+    color: whitesmoke;
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: .1s;
@@ -123,6 +124,7 @@ body
 
 .home-content p {
     font-size: 20px;
+    color: #f5f5f5;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
@@ -194,22 +196,16 @@ body
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin-left: 80px;
+    font-size: 600px;
     width: 400px;
-    height: 400px;
-    margin-left: 20px;
-    background: #000a1d;
-    border: 12px solid blue;
-    border-radius: 50%;
-    border-style: double;
-    font-size: 20px;
-    box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue, 0 0 20px blue, 0 0 25px blue;
-    color: blue;
     animation: FadeOut 15s ease forwards;
 }
 
 .about-text h2 {
     font-size: 50px;
     margin-bottom: 2px;
+    color: #f5f5f5;
     margin-top: 80px;
 }
 
@@ -228,7 +224,7 @@ body
 }
 
 .about-text p {
-    color: aliceblue;
+    color: #f5f5f5;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 4rem;
@@ -238,6 +234,7 @@ body
 #services {
     color: aliceblue;
     font-size: 20px;
+    align-items: center;
     line-height: 1.4;
     margin-bottom: 4rem;
 }
@@ -258,6 +255,7 @@ body
 .services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+    align-items: center;
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -617,11 +615,11 @@ section{
     line-height: 1.5;
     text-shadow: 0 0 5px #000;
 }
-.layer i{
+.layer img{
     color: #ff004f;
     margin-top: 2px;
     font-size: 20px;
-    background: #fff;
+    background: black;
     width: 60px;
     height: 60px;
     display: flex;
@@ -672,6 +670,8 @@ section{
     margin-bottom: 3rem;
     color: blue;
     margin-left: 20px;
+    animation: FadeOut 12s ease forwards;
+    animation-delay: .1s;
 }
 .contact-list li{
     margin-bottom: 10px;
@@ -756,7 +756,7 @@ section{
     padding: 20px 0;
     background: rgb(7, 85, 91);
     font-weight: 600;
-    margin-top: 10px;
+    font-size: 25px;
 }
 .top {
     position: fixed;
