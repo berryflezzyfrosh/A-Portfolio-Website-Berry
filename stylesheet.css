@@ -21,6 +21,8 @@ body
     background: #051129;
     display: flex;
     justify-content: space-between;
+    background: rgba(0, 1, 23, 0.7);
+    box-shadow: 0 0 10px rgba(1, 2, 45, 0.5);
     align-items: center;
     z-index: 100;
 }
@@ -35,10 +37,21 @@ body
     animation: FadeOut 5s ease forwards;
 
 }
+.logo img{
+    padding: 0 5px;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 20px;
+    width: 40px;
+    transition: all 0.2s linear;
+}
+.logo img:hover{
+    opacity: 1;
+}
 .navbar a {
     display: inline-block;
     font-size: 25px;
-    color: whitesmoke;
+    color: #f5f5f5;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -141,7 +154,6 @@ body
     border-radius: 50%;
     font-size: 20px;
     color: #012290f7;
-    text-decoration: none;
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
@@ -364,6 +376,13 @@ section{
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
+.Technical-bars .bar .info img{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: FadeOut .2s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
 .Technical-bars .bar .progress-line{
     position: relative;
     border-radius: 10px;
@@ -398,16 +417,16 @@ section{
     width: 30%;
 }
 .progress-line.python span{
-    width: 40%;
+    width: 25%;
 }
 .progress-line.react span{
-    width: 35%;
+    width: 20%;
 }
 .progress-line span::after{
     position: absolute;
     padding: 1px 8px;
     background-color: #000;
-    color: #fff;
+    color: #ff3;
     font-size: 10px;
     border-radius: 3px;
     top: -28px;
@@ -425,10 +444,10 @@ section{
     content: "30%";
 }
 .progress-line.python span::after{
-    content: "40%";
+    content: "25%";
 }
 .progress-line.react span::after{
-    content: "35%";
+    content: "20%";
 }
 .progress-line span::before{
     content: "";
@@ -540,7 +559,6 @@ section{
 .radial-bar .text{
     width: 100%;
     position: absolute;
-    text-align: center;
     left: 50%;
     bottom: -5px;
     transform: translateX(-50px);
@@ -765,13 +783,13 @@ section{
 }
 .top i img{
     color: #000;
-    background:  blue;
+    background: rgba(0, 1, 23, 0.7);
+    box-shadow: 0 0 10px rgba(1, 2, 45, 0.5);
     margin-left: 8px;
     font-size: 50px;
     padding: 80%;
     align-content: center;
     border-radius: 1.2rem;
-
 
 }
 
