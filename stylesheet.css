@@ -34,7 +34,7 @@ body
     font-weight: 600;
     cursor: default;
     opacity: 0;
-    animation: slideRight 5s ease forwards;
+    animation: flash 3s infinite;
 
 }
 .logo img{
@@ -203,7 +203,7 @@ body
 
 .about {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
 }
@@ -216,9 +216,19 @@ body
     margin-left: 80px;
     font-size: 500px;
     width: 400px;
-    animation: FadeOut 15s ease forwards;
+    animation: flash 2s infinite;
 }
-
+@keyframes flash{
+0%{
+    opacity: 1;
+}
+50%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
 .about-text h2 {
     font-size: 50px;
     margin-bottom: 2px;
@@ -344,7 +354,7 @@ section{
 .container1{
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr); 
     align-items: center;
     gap: 0.1rem;
     width: 600px;
@@ -410,6 +420,7 @@ section{
     position: absolute;
     border-radius: 10px;
     animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
+    transform: scaleX();
     transform-origin: left;
 }
 
@@ -700,6 +711,9 @@ section{
 .contact-list li{
     margin-bottom: 10px;
     display: block;
+}
+.contact-list li img{
+    animation: flash .8s infinite;
 }
 
 .contact-list img{
