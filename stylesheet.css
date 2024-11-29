@@ -213,9 +213,11 @@ body
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px;
-    font-size: 500px;
-    width: 400px;
+    margin-left: 20px;
+    font-size: 50px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 2s;
     animation: flash 2s infinite;
 }
 @keyframes flash{
@@ -269,7 +271,6 @@ body
 .sub-title {
     text-align: center;
     font-size: 50px;
-    padding-bottom: 70px;
 }
 .sub-title span{
     color: #0ef;
@@ -332,8 +333,8 @@ body
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
-    animation: slideTop 1s ease forwards ;
-    animation-delay: 2s;
+    animation: flash 2s infinite;
+    animation-delay: calc(.2s * var(--i));
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
 }
@@ -354,7 +355,7 @@ section{
 .container1{
     width: 50%;
     display: grid;
-   grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
     align-items: center;
     gap: 0.1rem;
     width: 600px;
@@ -365,8 +366,9 @@ section{
 .heading1{
     text-align: center;
     text-decoration: underline;
-    text-underline-offset: 10px;
-    text-decoration-thickness: 10px;
+    text-decoration-style: double;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
     margin-bottom: 50px;
     position: relative;
 }
@@ -396,7 +398,7 @@ section{
     font-size: 17px;
     font-weight: 500;
     opacity: 0;
-    animation: FadeOut .2s ease forwards;
+    animation: flash 2s infinite;
     animation-delay: calc(.2s * var(--i));
 }
 .Technical-bars .bar .progress-line{
@@ -607,12 +609,26 @@ section{
     align-items: center;
     padding-left: 80px;
     padding-right: 80px;
+
 }
 .row{
     position: relative;
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
+}
+.row .text{
+    position: absolute;
+    color: chocolate;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+.row .text p{
+    text-align: center;
 }
 .row img {
     width: 100%;
@@ -685,7 +701,6 @@ section{
 }
 .contact-text h2 span{
     color: cyan;
-    text-shadow: 0 0 4px rgba(0, 0, 255, 0.419);
 }
 .contact-text h4{
     margin: 15px 0;
@@ -714,6 +729,7 @@ section{
 }
 .contact-list li img{
     animation: flash .8s infinite;
+    animation-delay: calc(.1s * var(--i));
 }
 
 .contact-list img{
@@ -761,11 +777,17 @@ section{
     width: 90%;
     padding: 18px;
     background: #555557;
-    color: #0ef;
+    color: #ff004f;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
+}
+.contact-form form input::placeholder{
+    color: #ff004f;
+}
+.contact-form,form textarea::placeholder{
+    color: #0ef;
 }
 .contact-form textarea{
     resize: none;
@@ -804,7 +826,7 @@ section{
     font-size: 25px;
 }
 .top {
-    position: fixed;
+    position:fixed;
     bottom: 2.1rem;
     right: 2,1rem;
 }
@@ -817,6 +839,7 @@ section{
     padding: 80%;
     align-content: center;
     border-radius: 1.2rem;
+    animation: flash 2s ease-in;
 
 }
 
