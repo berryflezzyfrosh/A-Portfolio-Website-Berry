@@ -395,7 +395,7 @@ section{
     opacity: 0;
 }
 .Technical-bars .bar .info img{
-    font-size: 17px;
+    font-size: 7px;
     font-weight: 500;
     opacity: 0;
     animation: flash 2s infinite;
@@ -827,13 +827,13 @@ section{
 }
 .top {
     position:fixed;
+    right: 60px;
     bottom: 2.1rem;
     right: 2,1rem;
 }
 .top i img{
     color: #000;
     background: #0ef;
-    box-shadow: 0 0 10px cyan;
     margin-left: 8px;
     font-size: 50px;
     padding: 80%;
