@@ -336,8 +336,8 @@ body
     text-decoration: none;
     font-weight: 600;
     opacity: 0;
-    animation: flash 2s infinite;
-    animation-delay: calc(.2s * var(--i));
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
 }
@@ -408,11 +408,12 @@ section{
     position: relative;
     border-radius: 10px;
     width: 200%;
-    height: 5px;
+    height: 6.5px;
     background-color: #000000;
-    animation: animate 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX();
+    animation: animate 1s linear forwards;
+    transform: scaleX(0);
     transform-origin: left;
+
 }
 @keyframes animate{
     100%{
@@ -424,8 +425,8 @@ section{
     background-color: cyan;
     position: absolute;
     border-radius: 10px;
-    animation: animate 1s 1s cubic-bezier(1,0,0,5,1) forwards;
-    transform: scaleX();
+    animation: animate 1s 1s linear forwards;
+    transform: scaleX(0);
     transform-origin: left;
 }
 
@@ -517,8 +518,8 @@ section{
     width: 120px;
     height: 160px;
 }
-.radial-bars .radial-bar .progress-bar{
-    stroke-width: 10;
+.progress-bar{
+    stroke-width: 15;
     stroke: black;
     fill: none;
     stroke-dasharray: 502;
@@ -526,23 +527,23 @@ section{
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
 }
-@keyframes animate-bar {
+@keyframes animate-bar{
     100%{
         stroke-dashoffset: -1;
     }
 }
 .path {
-    stroke-width: 10;
+    stroke-width: 15;
     stroke: cyan;
     fill:  none;
     stroke-dasharray: 502;
     stroke-dashoffset: 502;
     stroke-linecap: round;
 }
-.path-1{animation: animate-path1 1s 0.1s linear forwards}
-.path-2{animation: animate-path2 1s 0.1s linear forwards}
-.path-3{animation: animate-path3 1s 0.1s linear forwards}
-.path-4{animation: animate-path4 1s 0.1s linear forwards}
+.path-1{animation: animate-path1 1s 1s linear forwards}
+.path-2{animation: animate-path2 1s 1s linear forwards}
+.path-3{animation: animate-path3 1s 1s linear forwards}
+.path-4{animation: animate-path4 1s 1s linear forwards}
 
 
 @keyframes animate-path1{
@@ -565,7 +566,7 @@ section{
         stroke-dashoffset: 75;;
     }
 }
-.radial-bar .percentage{
+.percentage{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -575,15 +576,16 @@ section{
     animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
-.radial-bar .text{
+.text{
     width: 100%;
-    position: absolute;
+    position: relative;
+    text-align: center;
     left: 50%;
     bottom: -5px;
     transform: translateX(-50px);
     font-size: 17px;
     font-weight: 500;
-    animation: showText 0,5s 1s linear forwards;
+    animation: showText 0.5s 1s linear forwards;
     opacity: 0;
 }
 
@@ -712,8 +714,7 @@ section{
     animation-delay: .1s;
 }
 .contact-list li{
-    margin-bottom: 10px;
-    display: block;
+    display: flex;
 }
 .contact-list li img{
     animation: flash .8s infinite;
@@ -733,28 +734,30 @@ section{
     transform: scale(1.01) translateY(-5px);
     color: #012290f7;
 }
-.contact-icons{
+.contact-icon{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
     background: transparent;
-    border: 2px solid #012290f7;
+    border: 3px solid #0ef;
     border-radius: 50%;
     font-size: 20px;
     color: #012290f7;
-    text-decoration: none;
-    margin: 30px 15px 30px 0;
-    transition: .5s ease;
+    transition: all 1s;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    box-shadow: 0 0 5px cyan;
 }
-.contact-icons i:hover{
-    background: #012290f7;
-    color: #000;
-    box-shadow: 0 0 20px #012290f7;
+.contact-icon img{
+    width: 40px;
+    border-radius: 50%;
+}
+.contact-icon a:hover {
+    color: #081b29;
+    box-shadow: 0 0 20px  cyan;
 }
 .contact-form form{
     position: relative;
